@@ -1,8 +1,13 @@
 import React from 'react'
+import ItemList from './ItemList'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
   return (
-    <div className='font-serif text-4xl flex justify-center bg-slate-400 h-screen ' >{greeting}</div>
+    <>
+    <div className='font-serif text-4xl content-center bg-slate-400 h-full mb-0 '>
+      <ItemList/>
+    </div>
+    </>
   )
 }
 

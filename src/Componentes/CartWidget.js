@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+
 
 const CartWidget = () => {
   return (
@@ -32,10 +35,10 @@ const CartWidget = () => {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                 <li>
-                    <a className="justify-between">Profile<span className="badge">New</span></a>
+                    <Link to='/' className="justify-between">Menu<span className="badge">New</span></Link>
                 </li>
-                <li><a>Settings</a></li>
-                <li><a>Logout</a></li>
+                <li><Link to={`/category/verduras`}>Verduras</Link></li>
+                <li><Link to={`/category/condimentos`}>Condimento</Link></li>
             </ul>
         </div>
     </div>
